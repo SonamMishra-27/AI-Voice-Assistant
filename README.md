@@ -1,9 +1,6 @@
 # AI-Voice-Assistant
 
-# 🎙 30 Days of AI Voice Agents
-
-Welcome to my **30 Days of AI Voice Agents** challenge!  
-This repository documents my day-by-day journey of building AI-powered voice agents — from basic speech recognition to a fully functional, interactive conversational assistant.
+This repository documents the  journey of building AI-powered voice agents — from basic speech recognition to a fully functional, interactive conversational assistant.
 
 ---
 
@@ -77,6 +74,10 @@ http://127.0.0.1:8000
 ## 📜 License
 
 This project is licensed under the MIT License — feel free to fork and experiment!
+
+
+https://github.com/user-attachments/assets/923cd0ae-079b-447e-9ea8-7737b5a1e547
+
 
 ---
 
