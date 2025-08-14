@@ -1,0 +1,71 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Murf AI Voice Agent</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="static/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="main-layout">
+    
+    <!-- Left side -->
+    <div class="left-section">
+
+      <!-- Responses Container -->
+      <div class="responses-container">
+
+        <!-- Voice Assistant Heading -->
+        <h2 class="voice-assistant-heading"><i class="fas fa-robot"></i> Voice Assistant</h2>
+
+        <!-- Buttons -->
+        <div class="button-row">
+          <button id="record-btn">
+            <i class="fas fa-microphone"></i> Start / Stop Recording
+          </button>
+          <button id="stop-llm" class="stop-llm-btn">
+            <i class="fas fa-ban"></i> Stop LLM Responses
+          </button>
+        </div>
+
+        <!-- Status & Feedback -->
+        <p id="recording-status">🎙 Not recording</p>
+        <p id="upload-status"></p>
+
+        <!-- Transcript -->
+        <p id="transcript-result">📝 Transcript: <em>Waiting...</em></p>
+
+        <!-- LLM Response Container -->
+        <div id="llm-response-container">
+          <!-- Audio Playback above LLM Response -->
+          <audio id="audio-playback" controls style="display:none; margin-bottom:5px;"></audio>
+          <div id="llm-text-result">💡 LLM Response: <em>Waiting...</em></div>
+        </div>
+
+        <!-- AI Thinking Indicator -->
+        <p id="ai-thinking" style="display:none;">🤖 AI is thinking<span id="dots"></span></p>
+
+      </div>
+    </div>
+
+    <!-- Right: Chat History -->
+    <div class="history-panel">
+      <div class="history-header">
+        <h2>Chat History</h2>
+        <button id="clear-history-btn" title="Clear chat history">
+          <i class="fas fa-trash-alt"></i> Delete History
+        </button>
+      </div>
+
+      <!-- Chat history items -->
+      <div id="history-items"></div>
+    </div>
+
+  </div>
+
+  <script src="static/js/script.js"></script>
+</body>
+</html>
